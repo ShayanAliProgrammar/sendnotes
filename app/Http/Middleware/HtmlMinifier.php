@@ -36,6 +36,9 @@ class HtmlMinifier
                     "/ +/"                      => ' ',
                     '/\>\s+/s'                  => '>',
                     '/\s+</s'                   => '<',
+                    "/>\n</"                    => '><',
+                    "/>\s+\n</"                 => '><',
+                    "/>\n\s+</"                 => '><',
                 );
             }
             $buffer = preg_replace(array_keys($replace), array_values($replace), $buffer);
