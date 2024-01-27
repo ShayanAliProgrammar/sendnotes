@@ -6,6 +6,7 @@
     "license": "MIT",
     "require": {
         "php": "^8.1",
+        "davmixcool/laravel-meta-manager": "^1.2",
         "elgibor-solution/laravel-database-encryption": "^1.1",
         "guzzlehttp/guzzle": "^7.2",
         "laravel/breeze": "^1.28",

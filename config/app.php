@@ -70,7 +70,7 @@ return [
     |
     */
 
-    'timezone' => 'UTC',
+    'timezone' => 'Asia/Karachi',
 
     /*
     |--------------------------------------------------------------------------
@@ -160,6 +160,7 @@ return [
          * Package Service Providers...
          */
         \ESolution\DBEncryption\Providers\DBEncryptionServiceProvider::class,
+        Davmixcool\MetaManager\MetaServiceProvider::class,
 
 
         /*

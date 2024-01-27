@@ -85,7 +85,11 @@ new class extends Component
 
         <div>
             <x-input-label for="email" :value="__('Email')" />
-            <x-text-input wire:model="email" id="email" name="email" type="email" class="mt-1 block w-full" required autocomplete="username" />
+            @if (auth()->user()->email !== 'demo@example.com')                
+                <x-text-input wire:model="email" id="email" name="email" type="email" class="mt-1 block w-full" required autocomplete="username" />
+            @else
+                <x-text-input readonly wire:model="email" id="email" name="email" type="email" class="mt-1 opacity-65 cursor-not-allowed block w-full" required autocomplete="username" />
+            @endif
             <x-input-error class="mt-2" :messages="$errors->get('email')" />
 
             @if (auth()->user() instanceof \Illuminate\Contracts\Auth\MustVerifyEmail && ! auth()->user()->hasVerifiedEmail())

@@ -2,7 +2,10 @@
 
 namespace App\Providers;
 
+use Illuminate\Support\Facades\Vite;
 use Illuminate\Support\ServiceProvider;
+use Livewire\Livewire;
+use Spatie\Csp\Nonce\RandomString;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -11,7 +14,9 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register(): void
     {
-        //
+        Vite::useCspNonce('unsafe-inline');
+        Vite::useScriptTagAttributes(['defer' => '']);
+        Livewire::useScriptTagAttributes(['nonce' => 'unsafe-inline']);
     }
 
     /**
