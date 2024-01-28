@@ -11,6 +11,8 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 
     <link rel="shortcut icon" href="/logo.svg">
+
+    @wireUiScripts(['defer'=>''])
 </head>
 
 <body
@@ -31,7 +33,10 @@
             </div>
         </div>
 
-        hi
+        <div class="h-screen">
+            <x-color-picker/>
+        </div>
+
     </div>
 </body>
 
