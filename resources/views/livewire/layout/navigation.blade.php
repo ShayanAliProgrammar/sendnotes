@@ -40,12 +40,14 @@ new class extends Component
             <!-- Settings Dropdown -->
             <div class="hidden sm:flex sm:items-center sm:ms-6">
                 <x-dropdown>
-                    <x-slot name="trigger">
-                        <x-button label="Options" primary />
-                    </x-slot>
+                    <x-dropdown.header label="Settings">
+                        <x-dropdown.item label="Preferences" />
+                        <x-dropdown.item label="My Profile" />
+                    </x-dropdown.header>
                  
-                    <x-dropdown.item label="My Profile" />
-                    <x-dropdown.item label="Logout" />
+                    <x-dropdown.header label="Actions">
+                        <x-dropdown.item wire:click='logout' label="Logout" />
+                    </x-dropdown.header>
                 </x-dropdown>
                 
                 
