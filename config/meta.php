@@ -1,7 +1,7 @@
-<?php 
+<?php
 
 return [
-	/*
+    /*
     |--------------------------------------------------------------------------
     | Robots
     |--------------------------------------------------------------------------
@@ -12,10 +12,10 @@ return [
     | want them to index and look at.
     |
     */
-	'robots' => 'all',
+    'robots' => 'all',
 
 
-	/*
+    /*
     |--------------------------------------------------------------------------
     | Revisit After
     |--------------------------------------------------------------------------
@@ -23,10 +23,10 @@ return [
     | Here you may specify how search engines will re-visit and re-crawl your site.
     |
     */
-	'revisit_after' => 'period',
+    'revisit_after' => 'period',
 
 
-	/*
+    /*
     |--------------------------------------------------------------------------
     | Referrer
     |--------------------------------------------------------------------------
@@ -36,10 +36,10 @@ return [
     | options available are: none, unsafe-url, origin and none-when-downgrade
     |
     */
-	'referrer' => 'no-referrer-when-downgrade',
+    'referrer' => 'no-referrer-when-downgrade',
 
 
-	/*
+    /*
     |--------------------------------------------------------------------------
     | Type
     |--------------------------------------------------------------------------
@@ -47,10 +47,10 @@ return [
     | Here you may specify the structure type of your website or a specific page
     |
     */
-	'type' => 'website',
+    'type' => 'website',
 
-	
-	/*
+
+    /*
     |--------------------------------------------------------------------------
     | Title
     |--------------------------------------------------------------------------
@@ -59,9 +59,9 @@ return [
     | engines understand it better. 
     |
     */
-	'title'	=> '',
+    'title'    => '',
 
-	/*
+    /*
     |--------------------------------------------------------------------------
     | Description
     |--------------------------------------------------------------------------
@@ -70,9 +70,9 @@ return [
     | help search engines understand it better. 
     |
     */
-	'description' => '',
+    'description' => 'A way to send scheduled notes to your friends.',
 
-	/*
+    /*
     |--------------------------------------------------------------------------
     | Image
     |--------------------------------------------------------------------------
@@ -82,9 +82,9 @@ return [
     | or a specific page page.
     |
     */
-	'image' => '',
+    'image' => '',
 
-	/*
+    /*
     |--------------------------------------------------------------------------
     | Author
     |--------------------------------------------------------------------------
@@ -94,10 +94,10 @@ return [
     | or a specific page page.
     |
     */
-	'author' => '',
+    'author' => 'Shayan',
 
 
-	/*
+    /*
     |--------------------------------------------------------------------------
     | GEO REGION AND POSITION
     |--------------------------------------------------------------------------
@@ -106,11 +106,11 @@ return [
     | for your business.
     |
     */
-	'geo_region' => '', //e.g: Lagos
-	'geo_position' => '', //e.g(lng,lat): 4.870467,6.993388
+    'geo_region' => '', //e.g: Lagos
+    'geo_position' => '', //e.g(lng,lat): 4.870467,6.993388
 
 
-	/*
+    /*
     |--------------------------------------------------------------------------
     | TWITTER SITE
     |--------------------------------------------------------------------------
@@ -118,9 +118,9 @@ return [
     | Here you may provide your twitter @username of your account
     |
     */
-	'twitter_site' => '',
+    'twitter_site' => '@ShayanCoding',
 
-	/*
+    /*
     |--------------------------------------------------------------------------
     | TWITTER SITE
     |--------------------------------------------------------------------------
@@ -129,10 +129,10 @@ return [
     | twitter share type. Check twitter docs for more options.
     |
     */
-	'twitter_card' => 'summary_large_image',
+    'twitter_card' => 'summary_large_image',
 
 
-	/*
+    /*
     |--------------------------------------------------------------------------
     | FACEBOOK APP ID
     |--------------------------------------------------------------------------
@@ -140,11 +140,11 @@ return [
     | Here you may provide your facebook app id
     |
     */
-	'fb_app_id' => '',
+    'fb_app_id' => '',
 
 
 
-	/*
+    /*
     |--------------------------------------------------------------------------
     | KEYWORDS
     |--------------------------------------------------------------------------
@@ -152,7 +152,7 @@ return [
     | Here you may provide keywords relevant to your website and the specific page.
     |
     */
-	'keywords' => '',
+    'keywords' => 'PHP, Laravel, Notes, Send Note application, MySQL, Livewire, Breeze, Volt',
 
 
 ];

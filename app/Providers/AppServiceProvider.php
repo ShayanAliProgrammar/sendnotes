@@ -15,7 +15,8 @@ class AppServiceProvider extends ServiceProvider
     public function register(): void
     {
         Vite::useCspNonce('unsafe-inline');
-        Livewire::useScriptTagAttributes(['nonce' => 'unsafe-inline']);
+        // Livewire::useScriptTagAttributes(['nonce' => 'unsafe-inline', 'async' => '']);
+        Vite::useScriptTagAttributes(['async' => '']);
     }
 
     /**

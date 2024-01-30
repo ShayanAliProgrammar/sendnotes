@@ -14,11 +14,12 @@ return new class extends Migration
     {
         Schema::create('notes', function (Blueprint $table) {
             $table->uuid('id');
+            $table->foreignId('user_id')->constrained();
             $table->text('title');
             $table->text('body');
             $table->datetime('send_date');
             $table->boolean('is_published')->default(false);
-            $table->integer('like_counts')->default(0);
+            $table->integer('likes_count')->default(0);
             $table->timestamps();
         });
     }

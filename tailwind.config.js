@@ -1,5 +1,6 @@
 import defaultTheme from 'tailwindcss/defaultTheme';
 import forms from '@tailwindcss/forms';
+import colors from 'tailwindcss/colors.js';
 
 /** @type {import('tailwindcss').Config} */
 export default {
@@ -20,14 +21,20 @@ export default {
     ],
     theme: {
         extend: {
+            colors:{
+                primary: colors.indigo,
+                secondary: colors.gray,
+                positive: colors.emerald,
+                negative: colors.red,
+                warning: colors.amber,
+                info: colors.blue
+            },
             fontFamily: {
-                sans: ['Poppins', ...defaultTheme.fontFamily.sans],
+                sans: [...defaultTheme.fontFamily.sans],
             },
         },
     },
-
     plugins: [
-		forms,
-		require("daisyui")
+		forms
 	],
 };

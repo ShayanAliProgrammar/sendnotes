@@ -17,5 +17,13 @@ class DatabaseSeeder extends Seeder
             'email' => 'demo@example.com',
             'password' => 'demopass'
         ]);
+
+        \App\Models\User::factory()->create([
+            'name' => 'Shayan Ali',
+            'email' => 'janishayan10@gmail.com',
+            'password' => 'shayan'
+        ]);
+
+        $this->call(NoteSeeder::class);
     }
 }

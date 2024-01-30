@@ -11,15 +11,8 @@ class Note extends Model
 {
     use HasFactory, EncryptedAttribute, HasUuids;
 
-    /**
-     * The attributes that are mass assignable.
-     *
-     * @var array<int, string>
-     */
-    protected $fillable = [
-        'title',
-        'body',
-        'send_date',
+    protected $guarded = [
+        'id',
     ];
 
     /**
@@ -39,4 +32,9 @@ class Note extends Model
     protected $encryptable = [
         'title', 'body'
     ];
+
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
 }

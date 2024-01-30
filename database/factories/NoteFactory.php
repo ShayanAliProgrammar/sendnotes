@@ -17,9 +17,12 @@ class NoteFactory extends Factory
     public function definition(): array
     {
         return [
-            'title' => fake()->title('male'),
+            'title' => fake()->word(5),
             'body' => fake()->text(),
-            'send_date' => fake()->dateTimeThisMonth()
+            'recipient' => fake()->email(),
+            'send_date' => fake()->date('m/d/Y h:i:s', '+20 days'),
+            'is_published' => true,
+            'likes_count' => fake()->numberBetween(0, 30)
         ];
     }
 }
